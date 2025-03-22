@@ -6,7 +6,11 @@ const dotenv = require("dotenv");
 dotenv.config({ path: ".././src/config/config.env" });
 const validator = require("validator");
 const userSchema = new Schema({
-  name: {
+  firstName: {
+    type: String,
+    required: true,
+  },
+  lastName: {
     type: String,
     required: true,
   },
@@ -22,125 +26,10 @@ const userSchema = new Schema({
   },
   password: {
     type: String,
-    // required: true,
-    //validation will be before saving to db
+    
   },
-  phone: {
-    type: String,
-    // required: true,
-    // unique: true,
-    // validate(value) {
-    //   if (!validator.isMobilePhone(value)) {
-    //     throw new Error("Invalid Phone Number");
-    //   }
-    // }
-    default: null
-  },
-  role: {
-    type: String,
-    enum: ["user", "admin"],
-    default: "user",
-  },
-  createdAt: {
-    type: Date,
-    default: Date.now(),
-  },
-  passwordResetToken: {
-    type: Number,
-  },
-  passwordResetTokenExpires: {
-    type: Date,
-  },
-  lastLogin: {
-    type: Date,
-  },
-  isActive: {
-    type: Boolean,
-    default: true,
-  },
-  provider: {
-    type:String,
-    default: "app"
-  },
-  athleticDetails: {
-    type: {
-      age: {
-        type: Number,
-      },
-      height: {
-        type: Number,
-      },
-      foot: {
-        type: String,
-        enum: ["left", "right", "Left", "Right"],
-      },
-      preferredPosition: {
-        type: String,
-      },
-      skillsAndAttributes: {
-        type: String,
-      },
-      country: {
-        type: String,
-      },
-      state: {
-        type: String,
-      },
-      bio: {
-        type: String,
-      },
-      profileImage: {
-        type: String,
-        default: null,
-      },
-      fullImage: {
-        type: String,
-      },
-      city: {
-        type: String,
-      },
-      availability: {
-        type: String,
-      },
-      experience: {
-        type: String,
-      },
-    },
-    default: null,
-  },
-
-  country: {
-    type: String,
-    // required: true,
-  },
-  zip: {
-    type: String,
-    // required: true,
-  },
-
-  performance: {
-    goals: {
-      type: Number,
-      default: 0,
-    },
-    assist: {
-      type: Number,
-      default: 0,
-    },
-    cleansheets: {
-      type: Number,
-      default: 0,
-    },
-  },
-  deviceToken: {
-    type: String,
-    default: null,
-  },
-  isNotificationEnabled: {
-    type: Boolean,
-    default: true,
-  },
-});
+  
+},{timestamps:true});
 
 //hash password before saving
 userSchema.pre("save", async function (next) {

@@ -6975,3 +6975,18 @@
 {"date":"2024-12-05T07:34:26.736Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/team?season=&league=&city=ab&page=1&limit=7"}
 {"date":"2024-12-05T07:34:27.080Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/team?season=&league=&city=a&page=1&limit=7"}
 {"date":"2024-12-05T07:34:27.209Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/team?season=&league=&city=&page=1&limit=7"}
+{"date":"2025-03-22T08:26:38.867Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/auth/register"}
+{"date":"2025-03-22T08:26:51.069Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/auth/login"}
+{"date":"2025-03-22T08:31:25.440Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/task"}
+{"date":"2025-03-22T08:31:36.684Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/task"}
+{"date":"2025-03-22T08:31:45.757Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/task"}
+{"date":"2025-03-22T08:32:04.849Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/task"}
+{"date":"2025-03-22T08:32:09.427Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/task"}
+{"date":"2025-03-22T08:32:13.492Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/task"}
+{"date":"2025-03-22T08:32:55.244Z","level":"info","message":"Request received","method":"PATCH","service":"user-service","url":"/task"}
+{"date":"2025-03-22T08:33:17.329Z","level":"info","message":"Request received","method":"PATCH","service":"user-service","url":"/task/67de758d097e62946724275a"}
+{"date":"2025-03-22T08:33:39.221Z","level":"info","message":"Request received","method":"GET","service":"user-service","url":"/task"}
+{"date":"2025-03-22T08:34:25.803Z","level":"info","message":"Request received","method":"DELETE","service":"user-service","url":"/task/67de758d097e62946724275a"}
+{"date":"2025-03-22T08:36:42.529Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/task"}
+{"date":"2025-03-22T08:36:42.714Z","level":"error","message":"Task validation failed: user: Path `user` is required.","method":"POST","service":"user-service","url":"/"}
+{"date":"2025-03-22T08:40:04.466Z","level":"info","message":"Request received","method":"POST","service":"user-service","url":"/task"}
