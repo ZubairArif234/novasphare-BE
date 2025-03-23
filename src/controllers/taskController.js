@@ -88,7 +88,7 @@ const getAll = async (req,res) => {
     title: { $regex: search, $options: "i" }
    }:{}
    
-     const tasks = await Task.find({...searchFilter})
+     const tasks = await Task.find({user:req.user._id, ...searchFilter}).sort({status:-1})
       return SuccessHandler(
            {
             message:"Task retrieve successfully",

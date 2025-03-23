@@ -355,3 +355,11 @@
 {"date":"2024-12-05T07:04:40.356Z","level":"error","message":"country is not defined","method":"GET","service":"user-service","url":"/?season=&league=&city=&page=1&limit=7"}
 {"date":"2024-12-05T07:22:19.273Z","level":"error","message":"League is required","method":"POST","service":"user-service","url":"/player-standing"}
 {"date":"2025-03-22T08:36:42.714Z","level":"error","message":"Task validation failed: user: Path `user` is required.","method":"POST","service":"user-service","url":"/"}
+{"date":"2025-03-23T09:59:24.122Z","level":"error","message":"Invalid credentials","method":"POST","service":"user-service","url":"/login"}
+{"date":"2025-03-23T10:06:35.934Z","level":"error","message":"User already exist with this email.","method":"POST","service":"user-service","url":"/register"}
+{"date":"2025-03-23T10:22:00.980Z","level":"error","message":"Task validation failed: status: `Pending` is not a valid enum value for path `status`., dueDate: Path `dueDate` is required.","method":"POST","service":"user-service","url":"/"}
+{"date":"2025-03-23T10:53:14.794Z","level":"error","message":"Task validation failed: status: `In Progess` is not a valid enum value for path `status`.","method":"PATCH","service":"user-service","url":"/67dfe5b92c65c4f10d77de1f"}
+{"date":"2025-03-23T12:02:12.888Z","level":"error","message":"Invalid credentials","method":"POST","service":"user-service","url":"/login"}
+{"date":"2025-03-23T12:04:24.110Z","level":"error","message":"Invalid credentials","method":"POST","service":"user-service","url":"/login"}
+{"date":"2025-03-23T12:05:11.639Z","level":"error","message":"User does not exist","method":"POST","service":"user-service","url":"/login"}
+{"date":"2025-03-23T12:06:11.227Z","level":"error","message":"User does not exist","method":"POST","service":"user-service","url":"/login"}
